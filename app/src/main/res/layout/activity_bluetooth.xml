@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/acceptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="19dp"
+        android:text="Accept" />
+
+    <ListView
+        android:id="@+id/pairedDeviceListView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/acceptButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pairedDeviceListView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Message"
+        android:textAlignment="center"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/writeMessageEditText"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/acceptButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="75dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/writeMessageEditText"
+        android:layout_alignEnd="@+id/statusLabel"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/listDevicesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pairedDeviceListView"
+        android:layout_centerHorizontal="true"
+        android:text="List Paired Devices" />
+
+    <TextView
+        android:id="@+id/statusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/listDevicesButton"
+        android:layout_alignBottom="@+id/listDevicesButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:text="Status"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/bluetoothReturnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/writeMessageEditText"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-340dp"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@id/writeMessageEditText"
+        android:gravity="center"
+        android:text="Return" />
+
+    <Button
+        android:id="@+id/saveDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/writeMessageEditText"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-210dp"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@id/writeMessageEditText"
+        android:gravity="center"
+        android:text="Save" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/rename_list"
+        android:title="Rename list"
+        app:showAsAction = "never" />
+
+    <item android:id="@+id/share_via_bluetooth"
+        android:title="Share via Bluetooth"
+        app:showAsAction = "never" />
+    <item
+        android:id="@+id/log_out_item_task_toolbar"
+        android:title="Log out"
+        app:showAsAction="never" />
+</menu>
